@@ -2,7 +2,9 @@
 
 ##Summary
 
-The provided scripts merge UCI HAR Dataset into a tidy data set and then calcuate an average of each measurement attribute grouped by Activity and Subject.
+The provided scripts merge UCI HAR Dataset into a tidy data set and then calcuate an average of each measurement attribute grouped by Activity and Subject. The data set may be downloaded from
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ##Scripts
 
