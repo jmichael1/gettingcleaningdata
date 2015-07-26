@@ -45,7 +45,7 @@ colnames(subjectmerged) <- c('subject')
 # Extract the features and use to set the column names of the x data
 
 xcolheader <- as.vector(features$V2)
-colnames(x) <- xcolheader
+colnames(xmerged) <- xcolheader
 
 # Merge the activity list with the x data
 
@@ -82,7 +82,7 @@ avgbysubjectandactivity <- aggregate(meanstd[,4:82], list(meanstd$activity,means
 # modify the column names of grouping criteria
 colnames(avgbysubjectandactivity)[1:2] <- c("activity","subject")
 # modify the labels of the averaged columns to accurately reflect that they are summarized
-colnames(avgbysubjectandactivity)[3:82] <- paste('Avg_',colnames(avgbysubjectandactivity)[3:82],sep='')
+colnames(avgbysubjectandactivity)[3:81] <- paste('Avg_',colnames(avgbysubjectandactivity)[3:81],sep='')
 
 # write the table to a file
 
